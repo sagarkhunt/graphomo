@@ -1,0 +1,310 @@
+@import "tailwindcss";
+
+/* ==========================================================================
+   KUNIFORMA FONT FAMILY — COMPLETE OFFICIAL WEIGHTS & STYLES
+   ========================================================================== */
+
+@font-face {
+  font-family: "KUniforma";
+  src: url("/fonts/KUniforma-10Hairline.otf") format("opentype");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "KUniforma";
+  src: url("/fonts/KUniforma-15HairlineRitalic.otf") format("opentype");
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "KUniforma";
+  src: url("/fonts/KUniforma-20Thin.otf") format("opentype");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "KUniforma";
+  src: url("/fonts/KUniforma-25ThinRitalic.otf") format("opentype");
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "KUniforma";
+  src: url("/fonts/KUniforma-30Extralight.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "KUniforma";
+  src: url("/fonts/KUniforma-35ExtralightRitalic.otf") format("opentype");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "KUniforma";
+  src: url("/fonts/KUniforma-40Light.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "KUniforma";
+  src: url("/fonts/KUniforma-45LightRitalic.otf") format("opentype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "KUniforma";
+  src: url("/fonts/KUniforma-50Regular.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "KUniforma";
+  src: url("/fonts/KUniforma-55RegularRitalic.otf") format("opentype");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "KUniforma";
+  src: url("/fonts/KUniforma-60Medium.otf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "KUniforma";
+  src: url("/fonts/KUniforma-65MediumRitalic.otf") format("opentype");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "KUniforma";
+  src: url("/fonts/KUniforma-70Semibold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "KUniforma";
+  src: url("/fonts/KUniforma-75SemiboldRitalic.otf") format("opentype");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "KUniforma";
+  src: url("/fonts/KUniforma-80Bold.otf") format("opentype");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "KUniforma";
+  src: url("/fonts/KUniforma-85BoldRitalic.otf") format("opentype");
+  font-weight: 800;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "KUniforma";
+  src: url("/fonts/KUniforma-90Black.otf") format("opentype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "KUniforma";
+  src: url("/fonts/KUniforma-95BlackRitalic.otf") format("opentype");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* ==========================================================================
+   GRAPHOMO LOGO-BASED COLOR PALETTE
+   ========================================================================== */
+:root {
+  /* Logo Signature Colors */
+  --brand-yellow: #fdfe65;
+  --brand-yellow-hover: #edf04c;
+  --brand-yellow-glow: rgba(253, 254, 101, 0.35);
+  --brand-yellow-subtle: #fcfedf;
+
+  --brand-black: #0c0d10;
+  --brand-charcoal: #16181d;
+  --brand-gray: #595959; /* Logo 'ph' color */
+  --brand-gray-light: #8f9299;
+
+  /* Surfaces & Dividers */
+  --bg-primary: #fafcf4;
+  --bg-surface: #ffffff;
+  --bg-subtle: #f2f6dc;
+  --border-color: #e4eac8;
+  --border-light: #edf2d8;
+
+  --text-primary: #0c0d10;
+  --text-secondary: #595959;
+  --text-muted: #84878f;
+
+  /* Dark Theme Sections */
+  --footer-bg: #0c0d10;
+  --footer-border: #22252d;
+  --footer-text: #f4f5f1;
+}
+
+/* ==========================================================================
+   GLOBAL TYPOGRAPHY — ENFORCING KUNIFORMA ACROSS ENTIRE WEBSITE
+   ========================================================================== */
+
+* {
+  font-family: "KUniforma", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: "KUniforma", sans-serif !important;
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: "KUniforma", sans-serif !important;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6, .font-display {
+  font-family: "KUniforma", sans-serif !important;
+  letter-spacing: -0.025em;
+}
+
+button, input, textarea, select {
+  font-family: "KUniforma", sans-serif !important;
+}
+
+/* ==========================================================================
+   HIDE NEXT.JS DEV BADGES / INDICATORS (E.G. CACHE DISABLED PILL)
+   ========================================================================== */
+
+nextjs-portal,
+[data-nextjs-toast],
+[data-nextjs-dialog-overlay],
+[data-nextjs-dev-overlay],
+div[data-nextjs-toast],
+div[class*="dev-overlay"],
+div[class*="dev-tools"],
+#__next-build-watcher,
+#next-route-announcer,
+div[data-nextjs-route-announcer] {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+  width: 0 !important;
+  height: 0 !important;
+  clip: rect(0 0 0 0) !important;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f2f6dc;
+}
+::-webkit-scrollbar-thumb {
+  background: #cfd8a4;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #b5c083;
+}
+
+/* Hover Lift */
+.hover-lift {
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.hover-lift:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 32px -8px rgba(12, 13, 16, 0.08);
+}
+
+.hover-zoom-img {
+  overflow: hidden;
+}
+.hover-zoom-img img {
+  transition: transform 0.65s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.hover-zoom-img:hover img {
+  transform: scale(1.05);
+}
+
+/* Editorial Underline Effect */
+.editorial-link {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+}
+.editorial-link::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: var(--brand-yellow);
+  transform-origin: bottom right;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.editorial-link:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/* Marquee Animation */
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  display: flex;
+  width: 200%;
+  animation: marquee 32s linear infinite;
+}
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
